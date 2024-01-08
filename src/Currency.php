@@ -12,8 +12,11 @@ class Currency
         return json_decode($response->body());
     }
 
-    public static function convert(string $from, string $to, float $amount)
+    public static function convert(Currencies $from, Currencies $to, float $amount = 1)
     {
+        $from = str($from);
+        $to = str($to);
+
         $from_price = 0;
         $from_price_nbu_buy = 0;
         $from_price_nbu_sell = 0;
@@ -44,4 +47,12 @@ class Currency
             'nbu_cell_price' => number_format(($from_price_nbu_sell * $amount) / $to_price_nbu_sell, 2, '.', ' '),
         ];
     }
+}
+
+enum Currencies
+{
+    case AED;
+    case AUD;
+    case UZS;
+    case USD;
 }
