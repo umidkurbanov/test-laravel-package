@@ -18,9 +18,9 @@ class Currency
         $from_price_nbu_buy = 0;
         $from_price_nbu_sell = 0;
 
-        $to_price = 0;
-        $to_price_nbu_buy = 0;
-        $to_price_nbu_sell = 0;
+        $to_price = 1;
+        $to_price_nbu_buy = 1;
+        $to_price_nbu_sell = 1;
 
         foreach (self::getJson() as $item) {
             $code = strtolower($item->code);
