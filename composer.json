@@ -4,8 +4,7 @@
     "type": "library",
     "require": {
         "php": ">= 7.1",
-        "illuminate/support": ">=5.4",
-        "umidkurbanov/laravel-package": "^1.1"
+        "illuminate/support": ">=5.4"
     },
     "license": "MIT",
     "autoload": {
