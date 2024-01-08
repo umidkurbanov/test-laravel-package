@@ -2,6 +2,7 @@
 
 namespace AreaWeb\LaravelPackage\Providers;
 
+use AreaWeb\LaravelPackage\Currency;
 use AreaWeb\LaravelPackage\PCD;
 use Illuminate\Support\ServiceProvider;
 
@@ -13,6 +14,7 @@ class LaravelPackageServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->bind(PCD::class, PCD::class);
+        $this->app->bind(Currency::class, Currency::class);
 
         $this->mergeConfigFrom(
             __DIR__ . '/../../config/laravel-package.php', 'laravel-package'
