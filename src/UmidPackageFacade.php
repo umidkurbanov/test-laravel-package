@@ -8,6 +8,6 @@ class UmidPackageFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return ResovaApiClient::class;
+        return UmidPackageClient::class;
     }
 }

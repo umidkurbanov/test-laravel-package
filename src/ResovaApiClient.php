@@ -4,7 +4,7 @@ namespace UmidPackage;
 
 use Carbon\Carbon;
 
-class ResovaApiClient
+class UmidPackageClient
 {
     public function getTime()
     {
