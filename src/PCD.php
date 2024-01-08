@@ -34,7 +34,7 @@ class PCD
         return json_decode($response->body());
     }
 
-    private function getDocInfo($pin, $birth_date)
+    public function getDocInfo($pin, $birth_date)
     {
         $data = [
             'transaction_id' => rand(100_000_000_000_000, 999_999_999_999_999),
