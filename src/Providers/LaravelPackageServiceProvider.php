@@ -2,9 +2,8 @@
 
 namespace AreaWeb\LaravelPackage\Providers;
 
-use AreaWeb\LaravelPackage\Services\TestService;
+use AreaWeb\LaravelPackage\PCD;
 use Illuminate\Support\ServiceProvider;
-use src\PCD;
 
 class LaravelPackageServiceProvider extends ServiceProvider
 {
