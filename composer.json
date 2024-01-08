@@ -37,7 +37,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "UmidPackage\\UmidPackageServiceProvider"
+        "\\UmidPackage\\UmidPackageServiceProvider"
       ],
       "aliases": {
         "UmidPackage": "UmidPackage\\UmidPackageFacade"
