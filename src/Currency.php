@@ -27,6 +27,6 @@ class Currency
                 $to_price = $item->cb_price;
         }
 
-        return ($from_price * $amount) / $to_price;
+        return number_format(($from_price * $amount) / $to_price, 2, '.', ' ');
     }
 }
