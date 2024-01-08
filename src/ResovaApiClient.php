@@ -1,10 +1,10 @@
 <?php
 
-namespace laravel_package;
+namespace UmidPackage;
 
 use Carbon\Carbon;
 
-class LaravelPackageClient
+class ResovaApiClient
 {
     public function getTime()
     {
