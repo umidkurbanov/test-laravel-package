@@ -12,7 +12,7 @@ class Currency
         return json_decode($response->body());
     }
 
-    public static function convert($from, $to)
+    public static function convert(string $from, string $to, float $amount)
     {
         $from_price = 1;
         $to_price = 1;
@@ -27,6 +27,6 @@ class Currency
                 $to_price = $item->cb_price;
         }
 
-        return $from_price / $to_price;
+        return ($from_price * $amount) / $to_price;
     }
 }
