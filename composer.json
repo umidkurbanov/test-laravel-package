@@ -5,7 +5,7 @@
     "require": {
         "php": ">= 7.1",
         "illuminate/support": ">=5.4",
-        "umid/laravel-package": "^1.1"
+        "umidkurbanov/laravel-package": "^1.1"
     },
     "license": "MIT",
     "autoload": {
