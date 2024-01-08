@@ -9,6 +9,7 @@ class Currency
     private static function getJson()
     {
         $response = Http::get('https://nbu.uz/exchange-rates/json/');
+        return $response->body();
     }
 
     public static function convert($from, $to)
