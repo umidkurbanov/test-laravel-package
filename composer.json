@@ -22,10 +22,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "laravel-package\\LaravelPackageServiceProvider"
+                "laravel_package\\LaravelPackageServiceProvider"
             ],
             "aliases": {
-                "laravel-package": "laravel-package\\LaravelPackageFacade"
+                "laravel_package": "laravel_package\\LaravelPackageFacade"
             }
         }
     }
