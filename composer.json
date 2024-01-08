@@ -1,50 +1,34 @@
 {
-  "name": "umid/laravel-resova-api",
-  "description": "Laravel package of Resova API PHP client",
-  "type": "library",
-  "keywords": [
-    "laravel",
-    "package",
-    "resova",
-    "api",
-    "client",
-    "facade"
-  ],
-  "require": {
-    "php": ">=7.1",
-    "illuminate/support": ">=5.4"
-  },
-  "require-dev": {
-
-  },
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Paul Rock",
-      "email": "paul@drteam.rocks"
-    }
-  ],
+  "name": "areaweb/laravel-package",
+  "version": "1.0.0",
+  "description": "Example Laravel package for AreaWeb",
   "autoload": {
     "psr-4": {
-      "UmidPackage\\": "src/"
+      "AreaWeb\\LaravelPackage\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "ResovaApi\\Tests\\": "./tests"
+      "AreaWeb\\LaravelPackage\\Tests\\": "tests/"
     }
+  },
+  "authors": [
+    {
+      "name": "Mikhail Protasevich",
+      "email": "hello@areaweb.su"
+    }
+  ],
+  "require": {
+    "php": "^8.2"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.5"
   },
   "extra": {
     "laravel": {
       "providers": [
-        "UmidPackage\\UmidPackageServiceProvider"
-      ],
-      "aliases": {
-        "UmidPackage": "UmidPackage\\UmidPackageFacade"
-      }
+        "AreaWeb\\LaravelPackage\\Providers\\LaravelPackageServiceProvider"
+      ]
     }
-  },
-  "scripts": {
-    "test": "./vendor/bin/phpunit"
   }
 }
