@@ -1,0 +1,32 @@
+{
+    "name": "umid/laravel-package",
+    "description": "Umid Kurbanov's laravel package",
+    "type": "library",
+    "require": {
+        "php": ">= 7.1",
+        "illuminate/support": ">=5.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Umid\\LaravelPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Umid Kurbanov",
+            "email": "49520470+umidkurbanov@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "laravel_package\\Providers\\LaravelPackageServiceProvider"
+            ],
+            "aliases": {
+                "laravel_package": "laravel-package\\LaravelPackageFacade"
+            }
+        }
+    }
+}
