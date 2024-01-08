@@ -44,4 +44,30 @@ class Currency
             'nbu_cell_price' => number_format(($from_price_nbu_sell * $amount) / $to_price_nbu_sell, 2, '.', ' '),
         ];
     }
+
+    public const AED = 'AED';
+    public const AUD = 'AUD';
+    public const CAD = 'CAD';
+    public const CHF = 'CHF';
+    public const CNY = 'CNY';
+    public const DKK = 'DKK';
+    public const EGP = 'EGP';
+    public const EUR = 'EUR';
+    public const GBP = 'GBP';
+    public const ISK = 'ISK';
+    public const JPY = 'JPY';
+    public const KRW = 'KRW';
+    public const KWD = 'KWD';
+    public const KZT = 'KZT';
+    public const LBP = 'LBP';
+    public const MYR = 'MYR';
+    public const NOK = 'NOK';
+    public const PLN = 'PLN';
+    public const RUB = 'RUB';
+    public const SEK = 'SEK';
+    public const SGD = 'SGD';
+    public const TRY = 'TRY';
+    public const UAH = 'UAH';
+    public const USD = 'USD';
+    public const UZS = 'UZS';
 }
