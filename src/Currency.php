@@ -25,13 +25,13 @@ class Currency
         foreach (self::getJson() as $item) {
             $code = strtolower($item->code);
 
-            if ($code == $from) {
+            if ($code == strtolower($from)) {
                 $from_price = $item->cb_price;
                 $from_price_nbu_buy = $item->nbu_buy_price;
                 $from_price_nbu_sell = $item->nbu_cell_price;
             }
 
-            if ($code == $to) {
+            if ($code == strtolower($to)) {
                 $to_price = $item->cb_price;
                 $to_price_nbu_buy = $item->nbu_buy_price;
                 $to_price_nbu_sell = $item->nbu_cell_price;
