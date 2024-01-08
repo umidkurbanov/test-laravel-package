@@ -4,6 +4,7 @@ namespace AreaWeb\LaravelPackage\Providers;
 
 use AreaWeb\LaravelPackage\Services\TestService;
 use Illuminate\Support\ServiceProvider;
+use src\PCD;
 
 class LaravelPackageServiceProvider extends ServiceProvider
 {
@@ -12,7 +13,7 @@ class LaravelPackageServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->bind(TestService::class, TestService::class);
+        $this->app->bind(PCD::class, PCD::class);
 
         $this->mergeConfigFrom(
             __DIR__ . '/../../config/laravel-package.php', 'laravel-package'
