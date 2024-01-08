@@ -1,5 +1,5 @@
 {
-  "name": "areaweb/laravel-package",
+  "name": "umid/laravel-package",
   "version": "1.0.0",
   "description": "Example Laravel package for AreaWeb",
   "autoload": {
@@ -14,8 +14,8 @@
   },
   "authors": [
     {
-      "name": "Mikhail Protasevich",
-      "email": "hello@areaweb.su"
+      "name": "Umid Kurbanov",
+      "email": "hello@umid.su"
     }
   ],
   "require": {
