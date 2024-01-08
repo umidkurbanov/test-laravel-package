@@ -3,7 +3,6 @@
 namespace AreaWeb\LaravelPackage\Services;
 
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
 
 class TestService
 {
