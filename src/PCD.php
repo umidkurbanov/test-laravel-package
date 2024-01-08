@@ -7,21 +7,12 @@ use Illuminate\Support\Facades\Http;
 
 class PCD
 {
-    private string $username;
-    private string $password;
-
-    public function __construct(string $username, string $password)
-    {
-        $this->username = $username;
-        $this->password = $password;
-    }
-
-    private function getToken()
+    private static function getToken($username, $password)
     {
         $data = [
             'grant_type' => 'password',
-            'username' => $this->username,
-            'password' => $this->password,
+            'username' => $username,
+            'password' => $password,
         ];
 
         $response = Http::withHeaders([
@@ -33,7 +24,7 @@ class PCD
         return json_decode($response->body());
     }
 
-    public function getDocInfo($pin, $birth_date)
+    public static function getDocInfo($username, $password, $pin, $birth_date)
     {
         $data = [
             'transaction_id' => rand(100_000_000_000_000, 999_999_999_999_999),
@@ -51,7 +42,7 @@ class PCD
             ->withHeaders([
                 'Accept' => 'application/json',
                 'Content-Type' => 'application/json',
-                'Authorization' => 'Bearer ' . $this->getToken()->access_token
+                'Authorization' => 'Bearer ' . self::getToken($username, $password)->access_token
             ])
             ->withBody(json_encode($data), 'application/json')
             ->post('https://rmp-apimgw.egov.uz:8243/gcp/docrest/v1');
